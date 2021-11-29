@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+
+body { position: relative; padding: 0; margin: 0; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.42; color: #333; } 
+img{ max-width: 100%; }
+
+a{ color: inherit; }
+a:hover{ color: #01D167; text-decoration: none;}
+a, .btn { text-decoration: none; -webkit-transition: all 0.2s linear;  -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear;  -o-transition: all 0.2s linear;  transition: all 0.2s linear; }
+.btn:focus { box-shadow: 0 0 0 0.2rem rgb(50 91 175 / 20%); }
+
+  
+/* Common Button */
+.theme-btn { border-radius: 4px; padding: 8px 20px; color: #fff; background: #325BAF; border: 0; outline: none; }
+.theme-btn i{ margin: 0 10px 0 0; }
+.theme-btn:hover{ color: #fff; }
+ 
+
+/* ----------------------------------
+ Bootstrap Fix: IE10
+ in Windows 8 & Windows Phone 8
+ ---------------------------------- */
+@-webkit-viewport { width: device-width; } 
+@-moz-viewport { width: device-width; } 
+@-ms-viewport { width: device-width; } 
+@-o-viewport { width: device-width; } 
+@viewport { width: device-width; } 
+
+ 
+/* ====== Page Loader Animation ====== */
+.loader { position: fixed; z-index: 1200; box-sizing: border-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; height: 100%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; transition: opacity 1s linear; } 
+.fade-out.loader { opacity: 0; } 
+.fade-out .loader-inner { display: none; }
+ 
+
+/*=== Slick Slider Common Css ===*/
+.slick-dots { padding: 0; margin: 0;  list-style: none; text-align: center;}
+.slick-dots li { display: inline-block; padding: 0 3px;}
+.slick-dots li button{ padding: 0; margin: 0; border: 0; line-height: normal; font-size: 0; background: rgb(1 209 103 / 50%); height: 10px; width: 10px; border-radius: 10px; outline: none; cursor: pointer; -webkit-transition: all 0.2s linear;  -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear;  -o-transition: all 0.2s linear;  transition: all 0.2s linear; }
+.slick-dots li.slick-active button{ background: #01D167; width: 30px; }
+
+.carousel__pagination li button{ padding: 0; margin: 10; border: 0; line-height: normal; font-size: 0; background: rgb(1 209 103 / 50%); height: 10px; width: 10px; border-radius: 10px; outline: none; cursor: pointer; -webkit-transition: all 0.2s linear;  -moz-transition: all 0.2s linear; -ms-transition: all 0.2s linear;  -o-transition: all 0.2s linear;  transition: all 0.2s linear; }
+.carousel__pagination li button.carousel__pagination-button.carousel__pagination-button--active{ background: #01D167; width: 30px; }
+
+
+/* Custom Scrolling Css */
+.custom-scroll-div {scrollbar-width: thin; scrollbar-color: #c3c3c3 #fff; }
+.custom-scroll-div::-webkit-scrollbar { width: 8px; }
+.custom-scroll-div::-webkit-scrollbar-track { background-color: #fff; /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */ }
+.custom-scroll-div::-webkit-scrollbar-thumb { background-color: #c3c3c3; }
+
+
+/* Main Content */ 
+section.main-wapper { display: flex; }
+
+/* Sidebar */
+section.main-wapper .sidebar{  flex: 0 0 310px; background: #0C365A; padding: 30px; height: 100vh; color: #fff; overflow-y: auto; position: sticky; top: 0; }
+section.main-wapper .sidebar .logo{ color: #5a758d; margin: 0 0 50px; font-size: 15px; }
+section.main-wapper .sidebar .logo img{ margin: 0 0 20px; }
+section.main-wapper .sidebar .menu-list{ }
+section.main-wapper .sidebar .menu-list ul { list-style: none; padding: 0; margin: 0; }
+section.main-wapper .sidebar .menu-list ul li { padding: 20px 0; }
+section.main-wapper .sidebar .menu-list ul li.active a{ color: #01D167; }
+section.main-wapper .sidebar .menu-list ul li a{ display: flex; align-items: center; width: 100%; }
+section.main-wapper .sidebar .menu-list ul li .img{ width: 40px; font-size: 20px; }
+section.main-wapper .sidebar .menu-list ul li .text{ }
+section.main-wapper .sidebar .logo .toggle-btn { display: none; }
+
+
+
+/* Site Wapper  */
+section.main-wapper .site-content{ flex: 1 1 auto; padding: 40px; flex-direction: column; width: 100%; overflow: hidden; }
+section.main-wapper .site-content .top-head{ display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px; }
+section.main-wapper .site-content .top-head .left h3{ display: flex; align-items: center; font-weight: 600; font-size: 26px;}
+section.main-wapper .site-content .top-head .left h3 .tag{ border-radius: 4px; background: #01D167; padding: 3px 10px; color: #fff; font-size: 12px; margin: 0 10px 0 0;}
+section.main-wapper .site-content .top-head .left p{  }
+
+section.main-wapper .site-content .card-info { width: 100%;  }
+section.main-wapper .site-content .card-info .show-no{ text-align: right; color: #01D167; font-weight: 600; font-size: 14px; margin: 10px 0; }
+section.main-wapper .site-content .card-info .show-no i{ margin: 0 5px 0 0; font-size: 16px; }
+section.main-wapper .site-content .card-info .card-slider .img{ height: 240px; display: flex; align-items: center; justify-content: center;  border-radius: 15px; background: #01D167; text-align: center; color: #fff; font-size: 50px; }
+section.main-wapper .site-content .card-info .card-slider .item{ padding: 0 5px; }
+
+section.main-wapper .site-content .payment-list { background: #EDF3FF; margin: 40px 0 10px; padding: 20px 0; border-radius: 16px; }
+section.main-wapper .site-content .payment-list ul { list-style: none; padding: 0; margin: 0; display: flex;  align-items: center; justify-content: space-around; text-align: center; }
+section.main-wapper .site-content .payment-list ul li{ padding: 10px 10px; color: #0C365A; font-size: 14px; }
+section.main-wapper .site-content .payment-list ul li .img{ margin: 0 0 10px;  }
+
+
+section.main-wapper .site-content .accordion .view-all a{ border: 1px solid #DDFFEC; margin: -15px 0 0 0; text-align: center; background: #EDFFF5; color: #01D167; padding: 10px 20px; display: block; }
+section.main-wapper .site-content .accordion-list{ margin: 0 0 15px; border: 1px solid #F0F0F0; border-radius: 8px; box-shadow: 0 0 8px 0px #F0F0F0;}
+section.main-wapper .site-content .accordion-list .accor-head a{ color: #0C365A; position: relative; display: flex; align-content: center; width: 100%; padding: 20px; font-weight: 500; background: #F5F9FF; border-radius: 8px; }
+section.main-wapper .site-content .accordion-list .accor-head a img{ margin: 0 10px 0 0; }
+section.main-wapper .site-content .accordion-list .accor-head a i {position: absolute; top: 20px; right: 40px; font-style: normal; color: #0079c1;  }
+section.main-wapper .site-content .accordion-list .accor-head a i::before {content: "\e904"; position: absolute; font-family: 'icomoon' !important; transform: rotate(180deg); transform-origin: center; color: #aabadb; transition: all 0.3s;}
+section.main-wapper .site-content .accordion-list .accor-head a.collapsed { color: #1D2226;  } 
+section.main-wapper .site-content .accordion-list .accor-head a.collapsed i::before { content: "\e904"; transform: none; font-family: 'icomoon' !important; }
+section.main-wapper .site-content .accordion-list .accor-body { padding: 15px; }
+
+section.main-wapper .site-content .card-transactions ul { list-style: none; padding: 0; margin: 0; }
+section.main-wapper .site-content .card-transactions ul li{ margin: 10px 0; border-bottom: 1px solid #e2e2e2; display: flex;    padding: 10px 0; }
+section.main-wapper .site-content .card-transactions ul li:last-child{ border-bottom: 0; }
+section.main-wapper .site-content .card-transactions ul li .img{ background: #e2e2e2; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center;  justify-content: center;flex: 0 0 auto; }
+section.main-wapper .site-content .card-transactions ul li .img.one{ background: #009DFF1A; color: #009dff; }
+section.main-wapper .site-content .card-transactions ul li .img.two{ background: #00D6B51A; color: #00d6b5; }
+section.main-wapper .site-content .card-transactions ul li .img.three{ background: #F251951A; color: #f25195; }
+section.main-wapper .site-content .card-transactions ul li .text{ padding: 0 0 0 15px;     flex: 1 1 auto;  }
+section.main-wapper .site-content .card-transactions ul li .text h4{ font-size: 14px; font-weight: 600; margin: 0 0 2px 0; display: flex; justify-content: space-between;}
+section.main-wapper .site-content .card-transactions ul li .text h4 .active{ color: #01D167;  }
+section.main-wapper .site-content .card-transactions ul li .text p{ font-size: 13px; color: #AAAAAA; margin: 0 0 5px; }
+section.main-wapper .site-content .card-transactions ul li .text a.refund{  color: #325BAF; font-size: 12px; font-weight: 600; }
+section.main-wapper .site-content .card-transactions ul li .text a.refund i{ background: #325BAF; margin: 0 10px 0 0; font-size: 8px;    padding: 4px 7px; border-radius: 10px; color: #fff; }
+
+
+
+/* custom-tab */
+.custom-tab {  }
+.custom-tab ul.nav{ margin: 0 -15px 30px; display: flex; }
+.custom-tab ul.nav li { padding: 0 15px; }
+.custom-tab ul.nav li a{ border-bottom: 2px solid transparent; padding: 5px 0; color: #999; font-weight: 400; }
+.custom-tab ul.nav li a.active{ border-bottom: 2px solid #23CEFD; font-weight: 600; color: #000; }
+.custom-tab .tab-content { padding: 20px; box-shadow: 0px 0px 10px 0px #e2e2e2; border-radius: 5px; }

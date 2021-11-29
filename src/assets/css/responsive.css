@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1400px) {
+	 
+}
+@media only screen and (max-width: 1200px) {
+	 
+}
+
+@media only screen and (min-width: 1025px) {
+ 	section.main-wapper .sidebar .menu-list {  display: block; }
+}
+@media only screen and (max-width: 1024px) {
+	 section.main-wapper .sidebar { padding: 15px; position: fixed;   top: 0; z-index: 999; width: 100%; margin-bottom: 10px; height:inherit; }
+     section.main-wapper .sidebar .logo .toggle-btn { display: block; }
+     section.main-wapper .sidebar .logo { margin: 0; display: flex; align-items: center; justify-content: space-between;}
+     section.main-wapper .sidebar .logo p{ display: none; }
+     section.main-wapper .sidebar .logo img { margin: 0; }
+     section.main-wapper .sidebar .menu-list ul li { padding: 10px 0; }
+     section.main-wapper .sidebar .menu-list ul { margin: 20px 0 0; }
+
+     .custom-tab .tab-content { padding: 0; box-shadow: none;}
+     section.main-wapper .site-content { margin: 65px 0 0; padding: 20px 15px; }
+     section.main-wapper .site-content .payment-list ul { flex-wrap: wrap; }
+
+     section.main-wapper .sidebar .toggle-btn { border: none; outline: none; padding: 0; }
+	 section.main-wapper .sidebar .toggle-btn:focus{ outline: none; }
+	 section.main-wapper .sidebar .toggle-btn .navbar-toggler-icon { width: 24px; height: 17px; background-image: none; position: relative; border-bottom: 2px solid #fff; transition: all 300ms linear; }
+	 section.main-wapper .sidebar .toggle-btn .navbar-toggler-icon::after,
+	 section.main-wapper .sidebar .toggle-btn .navbar-toggler-icon::before { width: 24px; position: absolute; height: 2px; background-color: #fff; top: 0; left: 0; content: ""; z-index: 2; transition: all 300ms linear; }
+	 section.main-wapper .sidebar .toggle-btn .navbar-toggler-icon::after { top: 8px; }
+	 section.main-wapper .sidebar .toggle-btn[aria-expanded="true"] .navbar-toggler-icon::after { transform: rotate(45deg); }
+	 section.main-wapper .sidebar .toggle-btn[aria-expanded="true"] .navbar-toggler-icon::before { transform: translateY(8px) rotate(-45deg); }
+	 section.main-wapper .sidebar .toggle-btn[aria-expanded="true"] .navbar-toggler-icon { border-color: transparent; }
+
+	
+}
+@media only screen and (max-width: 991px) {
+	 
+
+}	
+@media only screen and (max-width: 768px) {
+	 
+
+} 
+@media only screen and (max-width: 767px) {
+	 
+}
+@media only screen and (max-width: 667px) {
+	 
+}
+@media only screen and (max-width: 568px) {
+	
+}
+@media only screen and (max-width: 480px) {  
+	
+}
+@media only screen and (max-width: 320px) {
+
+}
